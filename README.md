@@ -1,4 +1,4 @@
-# 🌤️ Weather API Wrapper
+# 🌤️ Weather API Wrapper | Made with AI
 
 A high-performance, containerized API wrapper built with **FastAPI** and **Redis** that retrieves weather data while optimizing network requests through aggressive caching and rate limiting considerations.
 
