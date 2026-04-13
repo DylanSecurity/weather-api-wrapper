@@ -1,0 +1,21 @@
+# Entornos Virtuales
+venv/
+env/
+.venv/
+
+# Variables de Entorno (¡CRÍTICO!)
+.env
+*.env
+
+# Caché de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Docker
+.docker/
+
+# IDEs (VS Code, PyCharm, etc)
+.vscode/
+.idea/

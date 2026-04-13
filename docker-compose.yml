@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  # Tu nueva API
+  api:
+    build: .
+    container_name: weather_api
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env  # Le inyectamos tus variables de entorno secretas
+    depends_on:
+      - redis_cache # Le dice a Docker que no levante la API hasta que Redis esté listo
+    restart: always
+
+  # El Redis que ya tenías
+  redis_cache:
+    image: redis:7.2-alpine
+    container_name: weather_redis
+    ports:
+      - "6379:6379"
+    restart: always
