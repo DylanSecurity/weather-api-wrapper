@@ -84,3 +84,6 @@ To gracefully stop and remove the containers and network, run:
 ```bash
 docker-compose down
 ```
+## 🤖 AI Collaboration & Methodology
+
+This project was developed using an AI-assisted pair programming approach. AI tools were leveraged as a technical mentor to brainstorm architectural decisions (such as integrating Redis for caching and containerizing with Docker), while the actual implementation, environment troubleshooting, and deployment were manually executed and validated. This reflects a modern development workflow focused on productivity and deep understanding of backend systems.
